@@ -26,6 +26,10 @@ body {
     padding: 0px 10px;
 }
 
+.col-25 {
+    width: 25%;
+}
+
 img {
     width: 100%;
 }
@@ -53,12 +57,32 @@ img {
     justify-content: space-between;
 }
 
+.align-end {
+    align-items: end;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-cen {
+    justify-content: center;
+}
+
 .flex-col {
     flex-direction: column;
 }
 
+.wrap {
+    flex-wrap: wrap;
+}
+
 .align-c{
     align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 .gap-25 {
@@ -67,6 +91,10 @@ img {
 
 .gap-40 {
     gap: 40px;
+}
+
+.padd-right-40 {
+    padding-right: 40px;
 }
 
 .padd-left-20 {
@@ -97,6 +125,12 @@ img {
     background-color: #0084fd;
     border: none;
 }
+
+.arrow-down {
+    padding: 6px 9px;
+    border-radius: 100%;
+    background-color: #9792e4;
+}
 /***********************************
           HEADER
 ***********************************/
@@ -124,6 +158,14 @@ header div:first-child {
     padding: 15px 0px;
 }
 
+.menu {
+    font-size: 30px;
+    background-color: #0084fd;
+    color: #ffffff;
+    display: none;
+    border: none;
+    line-height: 75px;
+}
 
 /***********************************
           SECTION INTRO  
@@ -135,9 +177,10 @@ header div:first-child {
 
 .card {
     min-height: 345px;
-    background-color: #b5ddff;
 }
-
+#intro .card {
+    background-color:#b5ddff ;
+}
 .card-row-grow {
     width: 50%;
 }
@@ -174,13 +217,59 @@ header div:first-child {
     margin-right: 10px;
 }
 
+/***********************************
+          SECTION PLANNING
+***********************************/
+.planning {
+    margin-top: 110px;
+}
 
+.row-large {
+    min-height: 930px;
+    background-color: #9792e4;
+}
+
+.card-white {
+    text-align: center;
+    padding: 0px 40px;
+    margin-bottom: 60px;
+    min-height: 50%;
+    border-radius: 40px;
+    background-color: #ffffff;
+}
+
+#planning-1 {
+    padding: 125px 0px;
+
+}
+
+.planning h2 {
+    margin-left: -80px;
+}
+
+.col-25-img *{
+    color: #ffffff;
+}
 
 /***********************************
           RESPONSIVE  
 ***********************************/
 @media screen and (max-width: 992px) {
 
+    header nav {
+        display: none;
+           }
+
+    .menu {
+        display: block;
+    }
+
+    .col-side {
+        display: none;
+    }
+    .col-25 {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
