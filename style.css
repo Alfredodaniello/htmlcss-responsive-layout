@@ -30,6 +30,10 @@ body {
     width: 25%;
 }
 
+.col-50 {
+    width: 50%;
+}
+
 img {
     width: 100%;
 }
@@ -93,6 +97,10 @@ img {
     gap: 40px;
 }
 
+.gap-80 {
+    gap: 80px;
+}
+
 .padd-right-40 {
     padding-right: 40px;
 }
@@ -137,10 +145,6 @@ img {
 header {
     background-color: #0084fd;
     height: 75px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 99;
     margin-bottom: 50px;
 }
 
@@ -180,15 +184,6 @@ header div:first-child {
 }
 #intro .card {
     background-color:#b5ddff ;
-}
-.card-row-grow {
-    width: 50%;
-}
-
-.card img {
-    padding-left: 40px;
-    padding-top: 75px;
-    padding-right: 100px;
 }
 
 #intro .card:not(.col-large .card) {
@@ -238,17 +233,22 @@ header div:first-child {
     background-color: #ffffff;
 }
 
-#planning-1 {
-    padding: 125px 0px;
-
-}
-
-.planning h2 {
-    margin-left: -80px;
-}
-
 .col-25-img *{
     color: #ffffff;
+}
+
+.card-50 {
+    width: 50%;
+}
+
+#planning-1 {
+    margin-top: 180px;
+}
+
+.phone {
+    height: 100%;
+    width: 80%; 
+    padding-left: 60px;
 }
 
 /***********************************
@@ -264,14 +264,47 @@ header div:first-child {
         display: block;
     }
 
+    #intro .col-large{
+        flex-wrap: wrap;
+        width: 70%;
+    }
+
+    .col-large {
+        flex-wrap: wrap;
+    }
+
     .col-side {
         display: none;
     }
-    .col-25 {
-        width: 100%;
+    .col-50{
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
+    .planning h2 {
+        margin-bottom: -3rem;
+        font-size: 50px;
+    }
+
+    .card-planning p {
+        margin-bottom: 30px;
+    }
+
+    .col-25-img p {
+        margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 768px) {
+
+    #intro .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
+    #intro .col {
+        width: 90%;
+        margin: auto;
+    }
 }
