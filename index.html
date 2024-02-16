@@ -8,21 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Responsive Layout</title>
 </head>
 <body>
-    <header>
+   <header>
         <div class="container d-flex justify-sb">
-            <div class="d-flex"> 
+            <div class="d-flex">
                 <img class="logo" src="./img/logo.png" alt="">
             </div>
             <div>
                 <nav>
                     <ul class="d-flex gap-40">
-                        <li><a href=""></a>Plannings</li>
-                        <li><a href=""></a>Testimonial</li>
-                        <li><a href=""></a>Features</li>
-                        <li><a href=""></a>About us</li>
+                        <li>Planning</li>
+                        <li>Testimonial</li>
+                        <li>Feature</li>
+                        <li>About us</li>
                         <li><button class="btn">Get Started</button></li>
                     </ul>
                 </nav>
@@ -30,118 +30,127 @@
                     <button class="menu"><i class="fa-solid fa-bars"></i></button>
                 </span>
             </div>
-        </div>
-    </header>
-    <main>
-        <section id="intro">
-            <div class="container d-flex flex-col gap-25">
-                <div class="row d-flex">
-                    <div class="col col-large d-flex grow">
-                        <div class="card d-flex flex-col gap-25 padd-left-20 card-50">
-                            <h3>Get demo application</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugiat deleniti ipsa officiis ex commodi laudantium vero nulla ipsum eligendi consequuntur sint facere corrupti sequi, odio minus molestiae et? Fugiat.</p>
+        </div>    
+   </header>
+   <main>
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-large col grow d-flex">
+                        <div class="card card-large">
+                            <h3 class="margin-25 padding-top-25">Get a demo application</h3>
+                            <p class="margin-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae earum ducimus alias temporibus quo explicabo modi quis cumque tenetur, eius ut eveniet itaque impedit unde odio aspernatur eos veritatis! Ex.</p>
                             <div>
-                                <button class="btn btn-large btn-blue"><span><i class="fa-brands fa-apple"></i></span>App Store</button>
+                                <button class="btn btn-large btn-blue"><i class="fa-brands fa-apple"></i>App Store</button>
                             </div>
                         </div>
-                        <div class="card card-50 d-flex">
-                            <img class="phone" src="./img/phone.png" alt="">
+                        <div class="card">
+                            <img src="./img/phone.png" alt="">
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card d-flex flex-col align-c gap-10 padd-right-20">
-                            <div><i class="fa-solid fa-file-code"></i></div>
-                            <h3>Clean Code</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio perferendis dicta veritatis aut nobis excepturi? Aliquid velit veniam adipisci eveniet eaque, sint, eius sed quo ad nesciunt magni quod.</p>
+                        <div class="card">
+                            <i class="fa-regular fa-file-code margin-25 padding-top-25"></i>
+                            <div>
+                                <h3 class="margin-25">Clean code</h3>
+                                <p class="margin-25">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dicta a reprehenderit. Tempore, ipsum fugiat. Eum doloribus dolores iusto aspernatur possimus fugit temporibus vel, ullam sapiente voluptatibus distinctio cumque? Est.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                 <div class="row d-flex">
+                <div class="row">    
                     <div class="col">
-                        <div class="card d-flex flex-col align-c gap-10 padd-right-20">
-                            <div><i class="fa-solid fa-compass-drafting"></i></div>
-                            <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio perferendis dicta veritatis aut nobis excepturi? Aliquid velit veniam adipisci eveniet eaque, sint, eius sed quo ad nesciunt magni quod.</p>
+                        <div class="card">
+                            <i class="fa-solid fa-compass-drafting margin-25 padding-top-25"></i>
+                            <div>
+                                <h3 class="margin-25">Web Desing</h3>
+                                <p class="margin-25">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dicta a reprehenderit. Tempore, ipsum fugiat. Eum doloribus dolores iusto aspernatur possimus fugit temporibus vel, ullam sapiente voluptatibus distinctio cumque? Est.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card d-flex flex-col align-c gap-10 padd-right-20">
-                            <div><i class="fa-solid fa-laptop-code"></i></div>
-                            <h3>Developement</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio perferendis dicta veritatis aut nobis excepturi? Aliquid velit veniam adipisci eveniet eaque, sint, eius sed quo ad nesciunt magni quod.</p>
+                        <div class="card">
+                            <i class="fa-solid fa-laptop-code margin-25 padding-top-25"></i>
+                            <div>
+                                <h3 class="margin-25">Developement</h3>
+                                <p class="margin-25">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dicta a reprehenderit. Tempore, ipsum fugiat. Eum doloribus dolores iusto aspernatur possimus fugit temporibus vel, ullam sapiente voluptatibus distinctio cumque? Est.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card d-flex flex-col align-c gap-10 padd-right-20">
-                            <div><i class="fa-solid fa-bullhorn"></i></div>
-                            <h3>Branding</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odio perferendis dicta veritatis aut nobis excepturi? Aliquid velit veniam adipisci eveniet eaque, sint, eius sed quo ad nesciunt magni quod.</p>
+                        <div class="card">
+                            <i class="fa-solid fa-bullhorn margin-25 padding-top-25"></i>
+                            <div>
+                                <h3 class="margin-25">branding</h3>
+                                <p class="margin-25">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque dicta a reprehenderit. Tempore, ipsum fugiat. Eum doloribus dolores iusto aspernatur possimus fugit temporibus vel, ullam sapiente voluptatibus distinctio cumque? Est.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="planning">
-            <div class="row-large d-flex">
-                <div class="col-25 col-side"></div>
-                <div class="col-50 d-flex">
-                    <div class="d-flex justify-cen flex-col gap-80   padd-right-40 col-25-img">
-                        <img id="planning-1" src="./img/planning1.png" alt="">
-                        <h2>Strategic Planning</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure impedit, culpa architecto repudiandae totam perspiciatis id et delectus dolore voluptatem tempora! Possimus accusamus mollitia quis quidem est quibusdam cum?</p>
-                    </div>
-                <div class="d-flex justify-end align-end">
-                    <div class="card card-white d-flex flex-col gap-10">
-                        <img id="planning-2" src="./img/planning2.png" alt="">
-                        <h3>App Developement</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloremque! Sit hic iusto corporis. Soluta a aspernatur corporis unde dolor expedita labore in blanditiis, assumenda excepturi veniam error! Perferendis, quidem!</p>
-                        <div>
-                            <button class="arrow-down"><i class="fa-solid fa-arrow-down"></i></button>
+            <div class="container-large">
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col col-white">
+                            <img id="planning-1" src="./img/planning1.png" alt="planning1">
+                            <h2>Strategic Planning</h2>
+                            <p class="p-planning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iure impedit, culpa architecto repudiandae totam perspiciatis id et delectus dolore voluptatem tempora! Possimus accusamus mollitia quis quidem est quibusdam cum?</p>
+                        </div>
+                        <div class="col col-planning">
+                            <div class="card-white">
+                                <img id="planning-2" class="margin-25" src="./img/planning2.png" alt="planning2">
+                                <h3 class="margin-25">App Developement</h3>
+                                <p class="margin-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, doloremque! Sit hic iusto corporis. Soluta a aspernatur corporis unde dolor expedita labore in blanditiis, assumenda excepturi veniam error! Perferendis, quidem!</p>
+                                <div>
+                                <button class="arrow-down"><i class="fa-solid fa-arrow-down"></i></button>
+                            </div>
                         </div>
                     </div>
-                </div>               
-                <div class="col-25 col-side"></div>
-                </div>
+                </div>    
+            </div>    
             </div>
         </section>
         <section class="testimonial">
             <div class="container">
-                <div class="row d-flex flex-col">
-                    <div class="test-title-card d-flex flex-col gap-25">
-                        <div>testimonial</div>
-                        <h1>We are committed exporting partner</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequuntur perspiciatis, sunt amet dolores eaque quos ullam officiis ipsam ipsa dolor rem dolore aliquam distinctio sit, tenetur adipisci enim molestiae.</p>
+                <div class="row">
+                    <div class="title">
+                        <h5 class="margin-25">Testimonial</h5>
+                        <h1 class="margin-25">We are committed external partner</h1>
+                        <p class="margin-25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque inventore distinctio, aliquam ipsum temporibus magni quaerat dicta cumque fuga adipisci minus aliquid dolore tempora blanditiis animi perferendis voluptates placeat alias?</p>
                     </div>
-                    <div class="card d-flex">
-                        <div class="circle d-flex">
-                            <img src="./img/testimonial1.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero officiis! Neque rem, nam dolore eius quidem expedita non harum ut facere ea corrupti sunt ipsa, recusandae saepe fuga animi?</p>
-                            <h4>mat reynolds</h4>
-                        </div>
+                </div>
+                <div class="testimonial-name d-flex margin-25">
+                    <div class="circle d-flex">
+                        <img src="./img/testimonial1.jpg" alt="">
                     </div>
-                    <div class="card d-flex">
-                        <div class="circle d-flex">
-                            <img src="./img/testimonial1.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero officiis! Neque rem, nam dolore eius quidem expedita non harum ut facere ea corrupti sunt ipsa, recusandae saepe fuga animi?</p>
-                            <h4>mat reynolds</h4>
-                        </div>
+                    <div class="testimonial-row d-flex wrap align-c margin-25">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed esse explicabo iure natus sapiente temporibus nostrum perferendis aliquid, numquam quam dolore hic delectus molestias quasi, voluptatibus consectetur necessitatibus aperiam quaerat!</p>
+                        <h4>Mat Reynolds</h4>
+                    </div>   
+                </div>
+                <div class="testimonial-name d-flex margin-25">
+                    <div class="circle d-flex">
+                        <img src="./img/testimonial2.jpg" alt="">
                     </div>
-                    <div class="card d-flex">
-                        <div class="circle d-flex">
-                            <img src="./img/testimonial1.jpg" alt="">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, libero officiis! Neque rem, nam dolore eius quidem expedita non harum ut facere ea corrupti sunt ipsa, recusandae saepe fuga animi?</p>
-                            <h4>mat reynolds</h4>
-                        </div>
+                    <div class="testimonial-row d-flex wrap align-c margin-25">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed esse explicabo iure natus sapiente temporibus nostrum perferendis aliquid, numquam quam dolore hic delectus molestias quasi, voluptatibus consectetur necessitatibus aperiam quaerat!</p>
+                        <h4>Mat Reynolds</h4>
+                    </div>   
+                </div>
+                <div class="testimonial-name d-flex margin-25">
+                    <div class="circle d-flex">
+                        <img src="./img/testimonial3.jpg" alt="">
                     </div>
+                    <div class="testimonial-row d-flex wrap align-c margin-25">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed esse explicabo iure natus sapiente temporibus nostrum perferendis aliquid, numquam quam dolore hic delectus molestias quasi, voluptatibus consectetur necessitatibus aperiam quaerat!</p>
+                        <h4>Mat Reynolds</h4>
+                    </div>   
                 </div>
             </div>
         </section>
-    </main>
+   </main> 
 </body>
 </html>
