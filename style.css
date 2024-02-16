@@ -9,6 +9,7 @@
 
 body {
     font-family: "PT Sans", sans-serif;
+    line-height: 1.5;
 }
 
 .container {
@@ -84,6 +85,10 @@ li {
     flex-wrap: wrap;
 }
 
+.margin-20 {
+    margin-bottom: 20px
+}
+
 /**********************************
             SECTION HEADER
 **********************************/
@@ -137,7 +142,11 @@ header div:first-child {
     border-radius: 100%;
     background-color: #9792e4;
 }
-
+.btn-pink {
+    background-color: #9792e4;
+    color: #ffffff;
+    padding: 8px 45px;
+}
 /**********************************
             SECTION INTRO
 **********************************/
@@ -192,6 +201,16 @@ header div:first-child {
 .intro .card:not(.col-large .card) {
     border-radius: 15px;
     padding-left: 25px;
+}
+
+.intro p {
+    font-weight: bold;
+    color: #5a6e7f;
+    font-size: 14px;
+}
+
+#phone {
+    display: block;
 }
 /**********************************
             SECTION PLANNING
@@ -264,10 +283,43 @@ header div:first-child {
 .testimonial-name {
     color: #ffffff;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: #9792e4;
 }
+/**********************************
+            SECTION BENEFITS
+**********************************/
+.benefits {
+    background-color: #9792e4;
+}
+.benefits h1 {
+    font-size: 35PX;
+    text-align: center;
+    margin-top: 75px;
+    color: #ffffff;
+    margin-bottom: 75px;
+}
 
+.benefits .card-white {
+    border-radius: 15px;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    width: calc(96% / 3);
+}
+
+.numbers {
+    font-size: 50px;
+    color: #9792e4;
+}
+
+.benefits h4 {
+    font-size: 20px;
+    color: #9792e4;
+}
+
+.benefits .row {
+    justify-content: space-between;
+}
 
 /**********************************
             MEDIA Q
@@ -296,7 +348,18 @@ header div:first-child {
     .planning h2 {
         font-size: 50px;
     }
+    #phone {
+        max-width: 250px;
+    }
+    .benefits .row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .benefits .card-white {
+        width: 45%;
+    }
 
+   
 }
 
 @media screen and (max-width: 768px){
@@ -311,4 +374,27 @@ header div:first-child {
 
     .circle  {
         justify-content: center;
-}
+    }
+    .circle img {
+    margin: 10px 0px;
+    }
+    #photo {
+        display: block;
+        margin: 0 auto;
+    }
+    .testimonial-row {
+        text-align: center;
+    }
+    .testimonial h4 {
+        justify-content: center;
+    }
+    .benefits .row {
+        margin-bottom: 15px;
+        gap: 30px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .benefits .card-white {
+        width: 100%;
+    }
+} 
