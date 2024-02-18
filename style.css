@@ -22,6 +22,16 @@ body {
     width: 100%;
 }
 
+.container-m {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container-small {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -89,6 +99,10 @@ li {
     margin-bottom: 20px
 }
 
+.padd-bot-50 {
+    padding-bottom: 50px;
+}
+
 /**********************************
             SECTION HEADER
 **********************************/
@@ -146,6 +160,17 @@ header div:first-child {
     background-color: #9792e4;
     color: #ffffff;
     padding: 8px 45px;
+}
+
+ .btn-pink-small {
+    border: none;
+}
+
+.btn-big {
+    color: #9792e4;
+    border: none;
+    padding: 20px 55px;
+    border-radius: 25px;
 }
 /**********************************
             SECTION INTRO
@@ -236,7 +261,8 @@ header div:first-child {
     padding: 20px 20px;
     border-radius: 20px;
     background-color: #ffffff;
-    margin-top: 150PX;
+    margin-top: 180PX;
+    min-height: 40%;
 }
 
 #planning-1 {
@@ -282,10 +308,28 @@ header div:first-child {
 
 .testimonial-name {
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 30px 20px;
     border-radius: 30px;
     background-color: #9792e4;
 }
+
+.testimonial-name p, .testimonial h4 {
+    padding: 0px 50px;
+}
+
+.testimonial i {
+    font-size: 20px;
+}
+
+.fa-quote-right {
+    padding-left: 5px;
+}
+.fa-quote-left {
+    padding-right: 5px;
+}
+
+
+
 /**********************************
             SECTION BENEFITS
 **********************************/
@@ -293,9 +337,9 @@ header div:first-child {
     background-color: #9792e4;
 }
 .benefits h1 {
-    font-size: 35PX;
+    padding-top: 50px;
+    font-size: 50PX;
     text-align: center;
-    margin-top: 75px;
     color: #ffffff;
     margin-bottom: 75px;
 }
@@ -315,6 +359,7 @@ header div:first-child {
 .benefits h4 {
     font-size: 20px;
     color: #9792e4;
+    text-align: left;
 }
 
 .benefits .row {
@@ -355,8 +400,68 @@ header div:first-child {
 }
 
 .margin-70 {
-    margin-bottom: 79px;
+    margin-bottom:70px ;
 }
+
+.fa-linkedin {
+    margin-right: 5px;
+}
+
+.relative {
+    position: relative;
+}
+
+.about-us .fa-quote-left {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 50px;
+    color: #9792e4;
+} 
+
+/**********************************
+            STARTED
+**********************************/
+.started {
+    background-color: #9792e4;
+}
+.started .container-m {
+
+    margin: auto;
+    text-align: center;
+}
+
+.started h6 {
+    padding-top: 70px;
+}
+
+.started h2 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.started h1 {
+    color: #fdc15f;
+    font-size: 70px;
+}
+
+.started p {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+footer span {
+    color: #9792e4;
+    text-decoration: underline;
+}
+
 
 /**********************************
             MEDIA Q
@@ -393,10 +498,14 @@ header div:first-child {
         flex-direction: column;
     }
     .benefits .card-white {
-        width: 45%;
+        margin-bottom: 30px;
+        width: 90%;
+
     }
 
-   
+    .benefits .card-row {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -437,4 +546,18 @@ header div:first-child {
     .about-us .col-30 {
         width: 100%;
     }
+    .benefits .card-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-70 {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+    
 } 
+
+
