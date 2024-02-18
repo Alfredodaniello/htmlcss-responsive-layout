@@ -409,6 +409,8 @@ header div:first-child {
 
 .relative {
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .about-us .fa-quote-left {
@@ -557,7 +559,12 @@ footer span {
     .col-30 {
         width: 100%;
     }
-    
+    .about-us h3, .about-us button {
+        margin-bottom: 25px;
+    }
+    .started .container-m {
+        width: 80%;
+    }
 } 
 
 
