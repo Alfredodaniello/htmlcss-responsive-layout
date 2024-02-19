@@ -54,8 +54,9 @@ li {
 .col {
     width: 25%;
 }
-.col-50 {
-    width:50%;
+.col-66{
+    margin: auto;
+    width:66%;
 }
 /**********************************
             SECTION UTILITY
@@ -103,6 +104,9 @@ li {
     padding-bottom: 50px;
 }
 
+.oblique {
+    font-style: oblique;
+}
 /**********************************
             SECTION HEADER
 **********************************/
@@ -202,7 +206,15 @@ header div:first-child {
     color: #0084fd;
     font-size: 60px;
 }
+.card-large {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 
+.card-phone {
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 15px ;
+}
 .intro h3 {
     color: #0084fd;
 }
@@ -240,16 +252,13 @@ header div:first-child {
 /**********************************
             SECTION PLANNING
 **********************************/
-.planning .col {
-    width: 25%;
-}
-
 .planning .container-large{
     min-height: 680px;
     background-color: #9792e4;
 }
 
 .col-planning {
+    align-self: flex-end;
     text-align: center;
 }
 
@@ -261,8 +270,8 @@ header div:first-child {
     padding: 20px 20px;
     border-radius: 20px;
     background-color: #ffffff;
-    margin-top: 180PX;
     min-height: 40%;
+    margin-bottom: 45px;
 }
 
 #planning-1 {
@@ -280,6 +289,7 @@ header div:first-child {
 }
 
 .col-white {
+    padding: 0px 40px;
     color: #ffffff;
 }
 .planning {
@@ -365,6 +375,10 @@ header div:first-child {
 .benefits .row {
     justify-content: space-between;
 }
+
+.benefits p {
+    color: #5a6e7f;
+}
 /**********************************
             SECTION ABOUT US
 **********************************/
@@ -387,7 +401,7 @@ header div:first-child {
 }
 
 .about-us h1 {
-    font-size: 40px;
+    font-size: 60px;
     color: #9792e4;
 }
 
@@ -396,6 +410,7 @@ header div:first-child {
 }
 
 .about-us h3 {
+    font-size: 20px;
     color: #9792e4;
 }
 
@@ -419,7 +434,11 @@ header div:first-child {
     right: 50px;
     font-size: 50px;
     color: #9792e4;
-} 
+}
+
+.about-us p {
+    font-size: 18px;
+}
 
 /**********************************
             STARTED
@@ -446,11 +465,9 @@ header div:first-child {
     color: #fdc15f;
     font-size: 70px;
 }
-
 .started p {
     color: #ffffff;
 }
-
 footer {
     text-align: center;
     padding-top: 50px;
@@ -458,7 +475,6 @@ footer {
     color: #ffffff;
     background-color: #333333;
 }
-
 footer span {
     color: #9792e4;
     text-decoration: underline;
@@ -479,6 +495,21 @@ footer span {
     .col-large{
         flex-direction: column;
     }
+    .intro .card-large {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .intro .card-phone {
+        border-top-right-radius:0px ;
+        border-bottom-right-radius: 15px ;
+        border-bottom-left-radius: 15px ;
+    }
+    .col-66 {
+        display: block;
+        width: 100%;
+    }
     .planning .col {
         width: 100%;
     }
@@ -496,15 +527,12 @@ footer span {
         max-width: 250px;
     }
     .benefits .row {
-        flex-wrap: wrap;
-        flex-direction: column;
+        display: block;
     }
     .benefits .card-white {
         margin-bottom: 30px;
         width: 90%;
-
     }
-
     .benefits .card-row {
         display: flex;
     }
@@ -514,12 +542,10 @@ footer span {
     .intro .col {
         width:100%
     }
-
     .testimonial-name {
         display: flex;
         flex-direction: column;
     }
-
     .circle  {
         justify-content: center;
     }
@@ -555,7 +581,6 @@ footer span {
     .col-70 {
         width: 100%;
     }
-
     .col-30 {
         width: 100%;
     }
@@ -566,5 +591,3 @@ footer span {
         width: 80%;
     }
 } 
-
-
